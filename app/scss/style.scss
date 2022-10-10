@@ -529,7 +529,8 @@
   }
   &__item-box{
     padding: 0 30px 0;
-    max-width: 310px;
+    max-width: 370px;
+    box-sizing: border-box
   }
   &__item-title{
     @extend %aeroport-700;
@@ -1493,6 +1494,102 @@
     color: #000;
   }
 }
+.earned{
+  padding: 70px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    margin-right: 85px;
+  }
+  &__content-title{
+    color: #000;
+    @extend %aeroport-700;
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 11px;
+    max-width: 319px;
+  }
+  &__content-text{
+    max-width: 319px;
+  }
+}
+.invest-propos{
+  padding: 70px 0;
+  &__container{
+    max-width: 1030px;
+  }
+  &__title{
+    color: #000;
+    font-size: 36px;
+    line-height: 38px;
+    @extend %aeroport-700;
+    max-width: 677px;
+    margin: 0 auto 57px;
+  }
+  &__inner{
+    background-color: $accent;
+    border-radius: 32px;
+    padding: 50px 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../images/bg/star.png');
+    background-position: 110% 71%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin: 0 auto;
+  }
+  &__box{
+    color: #000;
+  }
+  &__box-title{
+    font-size: 36px;
+    line-height: 40px;
+    @extend %aeroport-700;
+    max-width: 358px;
+    margin-bottom: 24px;
+  }
+  &__box-span{
+    font-size: 22px;
+    line-height: 28px;
+    @extend %aeroport-500;
+    margin-bottom: 32px;
+    display: block;
+  }
+  &__box-text{
+    padding-left: 47px;
+    position: relative;
+    max-width: 435px;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/security.svg');
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 38px;
+      left: 0;
+      top: 5px;
+    }
+  }
+  &__link{
+    @extend %btn-m-black;
+    padding: 21px 39px;
+  }
+}
+.others{
+  padding: 70px 0 190px;
+  &__wrapper{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 
 
 
