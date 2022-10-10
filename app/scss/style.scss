@@ -1051,15 +1051,24 @@
 }
 .investments{
   padding-bottom: 70px;
-  background-image: url('../images/bg/rocket.png');
-  background-repeat: no-repeat;
-  background-position: 81% 98%;
-  background-size: 39%;
+  &__container{
+    max-width: 1360px;
+  }
   &__inner {
     padding: 91px 0 93px 95px;
+    background-image: url('../images/bg/star.png');
+    background-repeat: no-repeat;
+    background-position: 100% 270%;
+    background-size: 50%;
     background-color: $accent;
     border-radius: 32px;
     color: #000;
+  }
+  &__img{
+    height: 575px;
+    position: absolute;
+    right: 315px;
+    top: 155px;
   }
   &__span {
     text-transform: uppercase;
@@ -1078,6 +1087,11 @@
   &__text {
     max-width: 504px;
     margin-bottom: 58px;
+    font-size: 22px;
+    line-height: 30px;
+    span{
+      @extend %aeroport-700;
+    }
   }
   &__btn {
     @extend %btn-m-black;
