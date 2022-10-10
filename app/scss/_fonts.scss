@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Aeroport Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Aeroport Medium'),
+    url('../fonts/Aeroport Medium.woff2') format('woff2'),
+    url('../fonts/Aeroport Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeroport Light';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Aeroport Light'),
+    url('../fonts/Aeroport Light.woff2') format('woff2'),
+    url('../fonts/Aeroport Light.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeroport Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Aeroport Bold'),
+    url('../fonts/Aeroport Bold.woff2') format('woff2'),
+    url('../fonts/Aeroport Bold.woff') format('woff');
+  font-display: swap;
+}

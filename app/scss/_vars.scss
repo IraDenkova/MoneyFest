@@ -1,0 +1,82 @@
+$accent: #FCC344;
+$default: #717171;
+$bg: #F7F7F7;
+
+
+%aeroport-400 {
+  font-family: 'Aeroport Light', sans-serif;
+  font-weight: 400;
+}
+%aeroport-500 {
+  font-family: 'Aeroport Medium', sans-serif;
+  font-weight: 500;
+}
+%aeroport-700 {
+  font-family: 'Aeroport Bold', sans-serif;
+  font-weight: 700;
+}
+
+%btn-s{
+  padding: 14px 27px;
+  background-color: $accent;
+  border-radius: 16px;
+  color: #000;
+  @extend %aeroport-500;
+  border: none;
+  font-size: 14px;
+  line-height: 19px;
+  transition: all .4s;
+  cursor: pointer;
+  &:hover{
+    color: #fff;
+    background-color: #000;
+  }
+}
+%btn-m {
+  padding: 17px 39px;
+  background-color: $accent;
+  border-radius: 16px;
+  color: #000;
+  transition: all .4s;
+  font-size: 16px;
+  line-height: 22px;
+  @extend %aeroport-500;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+%btn-l {
+  padding: 21px 39px;
+  background-color: $accent;
+  border-radius: 16px;
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all .4s;
+  @extend %aeroport-500;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+%btn-m-black {
+  padding: 17px 39px;
+  background-color: #000;
+  border-radius: 16px;
+  color: #fff;
+  transition: all .4s;
+  font-size: 16px;
+  line-height: 22px;
+  @extend %aeroport-500;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #000;
+    background-color: $accent;
+  }
+}
