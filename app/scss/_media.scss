@@ -1,0 +1,51 @@
+@media (max-width: 800px) {
+  .header-mobile{
+    display: block;
+  }
+  .header{
+    display: none;
+    &__btn{
+      display: block;
+    }
+  }
+}
+@media (max-width: 1180px){
+  .footer{
+    padding: 70px 0;
+  }
+  .scroll-up span{
+    top: -105px;
+  }
+  .footer-top__social {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 960px){
+  .footer{
+    padding: 53px 15px 40px;
+  }
+  .footer-top{
+    display: block;
+    padding: 0 0 40px 0;
+    &__courses{
+      display: none;
+    }
+    &__links-item{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .footer-logo__img {
+    margin-bottom: 30px;
+  }
+  .footer-bottom{
+    display: block;
+    &__text + .footer-bottom__text{
+      margin-top: 8px;
+    }
+  }
+  .scroll-up span {
+    top: -88px;
+    right: 0;
+  }
+}

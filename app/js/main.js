@@ -1,5 +1,24 @@
+
 $(function () {
   
+  const fadeIn = (el, timeout) => {
+    el.style.opacity = 0;
+    el.style.display = 'block';
+    el.style.transition = `opacity ${timeout}ms`;
+    setTimeout(() => {
+      el.style.opacity = 1;
+    }, 10);
+  };
+
+  const fadeOut = (el, timeout) => {
+    el.style.opacity = 1;
+    el.style.transition = `opacity ${timeout}ms`;
+    el.style.opacity = 0;
+    setTimeout(() => {
+      el.style.display = 'none';
+    }, timeout);
+  };
+
   var ques = document.getElementsByClassName("questions__item");
   var i;
   
@@ -8,9 +27,9 @@ $(function () {
       this.classList.toggle("questions__item--active");    
       var content = this.nextElementSibling;
       if (content.style.display === "block") {
-        content.style.display = "none";
+        fadeOut(content, 70);
       } else {
-        content.style.display = "block";
+        fadeIn(content, 700);
       }
     });
   };
@@ -22,12 +41,31 @@ $(function () {
       this.classList.toggle("invest-program__item--active");
       var procontent = this.nextElementSibling;
       if (procontent.style.display === "block") {
-        procontent.style.display = "none";
+        fadeOut(procontent, 70);
       } else {
-        procontent.style.display = "block";
+        fadeIn(procontent, 700);
       }
     });
   };
+
+  var topics = document.getElementsByClassName("ws-topics__list-item");
+
+  for (i = 0; i < topics.length; i++) {
+    topics[i].addEventListener("click", function () {
+      this.classList.toggle("ws-topics__list-item--active");
+      var topicstext = this.nextElementSibling;
+      if (topicstext.style.display === "block") {
+        fadeOut(topicstext, 70);
+      } else {
+        fadeIn(topicstext, 700);
+      }
+    });
+  };
+
+  $('.header__btn').on('click', function () {
+    $(this).toggleClass('header__btn--active');
+    $('.header__inner-menu').toggleClass('header__inner-menu--active');
+  });
 
   $('.review__btn').on('click', function () {
     $('.review__item--add').toggleClass('review__active');
@@ -38,6 +76,10 @@ $(function () {
     };
   });
 
+  $('.ws-choice__item').on('click', function () {
+    $(this).toggleClass('ws-choice__item--active');
+  });
+ 
   $('.publications__btn').on('click', function () {
     $('.publications__item--smalladd').toggleClass('publications__active--small');
     $('.publications__item--bigadd').toggleClass('publications__active--big');
