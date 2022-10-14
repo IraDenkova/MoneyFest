@@ -1,13 +1,5 @@
-@media (max-width: 800px) {
-  .header-mobile{
-    display: block;
-  }
-  .header{
-    display: none;
-    &__btn{
-      display: block;
-    }
-  }
+@media (max-width: 1335px){
+
 }
 @media (max-width: 1180px){
   .footer{
@@ -18,6 +10,19 @@
   }
   .footer-top__social {
     margin-right: 0px;
+  }
+  .top-slider__item--story{
+    background-image: none;
+  }
+  .top-slider__content--trading,
+  .top-slider__item--trading,
+  .top-slider__item--school{
+    background-image: none;
+  }
+}
+@media (max-width: 1080px){
+  .top-slider__item--person{
+    background-image: none;
   }
 }
 @media (max-width: 960px){
@@ -47,5 +52,103 @@
   .scroll-up span {
     top: -88px;
     right: 0;
+  }
+  .top-slider__content{
+    padding: 110px 50px 50px;
+  }
+  .numbers__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .header-mobile{
+    display: block;
+  }
+  .header{
+    display: none;
+    &__btn{
+      display: block;
+    }
+  }
+  .top-slider{
+    padding-bottom: 40px;
+  }
+  .numbers{
+    padding: 40px 0;
+  }
+}
+@media (max-width: 768px){
+  .title{
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .top-slider__title{
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .top-slider__content{
+    padding: 110px 35px 30px;
+  }
+  .top-slider__text{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .numbers__item-title{
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .numbers__item-text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 560px){
+  .top-slider__btn-box{
+    text-align: center;   
+  } 
+  .top-slider__btn,
+  .top-slider__btn--trading{
+    font-size: 14px;
+    line-height: 19px;
+    padding: 14px 72px;
+  }
+  .top-slider__btn--trading{
+    padding: 14px 50px;
+  }
+  .top-slider__item{
+    border-radius: 24px;
+  }
+  
+}
+@media (max-width: 440px){
+  .title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .top-slider__title{
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .top-slider__content{
+    padding: 180px 16px 8px;
+  }
+  .top-slider__text{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+  .numbers__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 32px;
+    grid-column: 23px;
+  }
+  .numbers__item-title{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .numbers__item-text{
+    font-size: 12px;
+    line-height: 16px;
   }
 }

@@ -324,8 +324,9 @@
 .numbers{
   padding: 70px 0;
   &__inner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
   }
   &__item-title{
     color: #000;

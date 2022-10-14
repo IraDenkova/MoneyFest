@@ -102,7 +102,15 @@ $(function () {
     fade: true,
     adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev"><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 16.293L9.29288 17.7072L0.585772 9.00008L9.29288 0.292969L10.7071 1.70718L3.4142 9.00008L10.7071 16.293Z" fill="black"/></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29291 4.70703L8.70712 3.29282L17.4142 11.9999L8.70712 20.707L7.29291 19.2928L14.5858 11.9999L7.29291 4.70703Z" fill="black"/></svg></button>'
+    nextArrow: '<button type="button" class="slick-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29291 4.70703L8.70712 3.29282L17.4142 11.9999L8.70712 20.707L7.29291 19.2928L14.5858 11.9999L7.29291 4.70703Z" fill="black"/></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1335,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
   });
 
   var mixer = mixitup('.publications__items');
