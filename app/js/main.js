@@ -19,13 +19,13 @@ $(function () {
     }, timeout);
   };
 
-  var ques = document.getElementsByClassName("questions__item");
+  const ques = document.getElementsByClassName("questions__item");
   var i;
   
   for (i = 0; i < ques.length; i++) {
     ques[i].addEventListener("click", function () {
       this.classList.toggle("questions__item--active");    
-      var content = this.nextElementSibling;
+      const content = this.nextElementSibling;
       if (content.style.display === "block") {
         fadeOut(content, 70);
       } else {
@@ -34,12 +34,12 @@ $(function () {
     });
   };
 
-  var pro = document.getElementsByClassName("invest-program__item");
+  const pro = document.getElementsByClassName("invest-program__item");
 
   for (i = 0; i < pro.length; i++) {
     pro[i].addEventListener("click", function () {
       this.classList.toggle("invest-program__item--active");
-      var procontent = this.nextElementSibling;
+      const procontent = this.nextElementSibling;
       if (procontent.style.display === "block") {
         fadeOut(procontent, 70);
       } else {
@@ -48,12 +48,12 @@ $(function () {
     });
   };
 
-  var topics = document.getElementsByClassName("ws-topics__list-item");
+  const topics = document.getElementsByClassName("ws-topics__list-item");
 
   for (i = 0; i < topics.length; i++) {
     topics[i].addEventListener("click", function () {
       this.classList.toggle("ws-topics__list-item--active");
-      var topicstext = this.nextElementSibling;
+      const topicstext = this.nextElementSibling;
       if (topicstext.style.display === "block") {
         fadeOut(topicstext, 70);
       } else {
@@ -61,6 +61,28 @@ $(function () {
       }
     });
   };
+
+  $('.courses__wrapper--mobile').slick({
+    arrows: false,
+    fade: true,
+  });
+
+  $('.experts__inner--mobile').slick({
+    arrows: false,
+    fade: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  });
+  
+  $('.review__inner--mobile').slick({
+    arrows: false,
+    fade: true,
+  });
+
+  $('.students__inner--mobile').slick({
+    arrows: false,
+    fade: true,
+  });
 
   $('.header__btn').on('click', function () {
     $(this).toggleClass('header__btn--active');

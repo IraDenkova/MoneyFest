@@ -341,11 +341,19 @@
 }
 .courses{
   padding: 70px 0;
+  &__item-img--mobile{
+    display: none;
+    height: 100px;
+    margin-bottom: 17px;
+  }
   &__wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+  }
+  &__wrapper--mobile{
+    display: none;
   }
   &__item{
     padding: 40px 40px 30px;
@@ -463,6 +471,9 @@
     left: 25px;
   }
 }
+.experts--mobile{
+  display: none;
+}
 .experts{
   padding: 70px 0;
   &__inner{
@@ -475,6 +486,7 @@
     border-radius: 24px;
     margin-bottom: 20px;
     object-fit: cover;
+    max-width: 100%;
   }
   &__item-title{
     font-size: 24px;
@@ -505,6 +517,9 @@
     }
   }
 }
+.review--mobile{
+  display: none;
+}
 .review{
   padding: 70px 0;
   &__top{
@@ -534,6 +549,7 @@
     background-image: url('../images/bg/review-video.jpg');
     min-height: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 186px 0;
   }
   &__video-link{
@@ -571,6 +587,9 @@
     font-size: 16px;
   }
 }
+.students--mobile{
+  display: none;
+}
 .students{
   padding: 70px 0;
   &__top{
@@ -585,8 +604,8 @@
     }
   }
   &__inner{
-    display: grid;
     grid-gap: 30px;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   &__item{
@@ -596,6 +615,8 @@
   }
   &__item-img{
     margin-bottom: 16px;
+    width: 100%;
+    object-fit: cover;
   }
   &__item-box{
     padding: 0 30px 0;
@@ -695,6 +716,9 @@
 }
 .form{
   padding: 70px 0 190px;
+  &__container{
+    max-width: 1080px;
+  }
   &__inner{
     padding: 64px 76px;
     background-color: $accent;
@@ -721,7 +745,7 @@
     color: #000;
   }
   &__form{
-    width: 425px;
+    max-width: 425px;
   }
   &__form-input{
     width: 100%;

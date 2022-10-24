@@ -1,5 +1,26 @@
 @media (max-width: 1335px){
-
+  .experts__link{
+    display: none;
+  }
+}
+@media (max-width: 1250px){
+  .experts__inner{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .experts__item{
+    display: flex;
+    align-items: center;
+  }
+  .experts__item-img{
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+  .review__item-box--1250{
+    display: none;
+  }
+  .review__inner{
+    justify-content: center;
+  }
 }
 @media (max-width: 1180px){
   .footer{
@@ -19,10 +40,53 @@
   .top-slider__item--school{
     background-image: none;
   }
+  .students__item{
+    padding-bottom: 24px;
+  }
+  .students__item-box{
+    padding: 0 16px 0;
+  }
 }
 @media (max-width: 1080px){
   .top-slider__item--person{
     background-image: none;
+  }
+  .courses__item--miner,
+  .courses__item--rocket,
+  .courses__item--shield{
+    background-image: none;
+  }
+  .courses__item-img--mobile{
+    display: block;
+  }
+  .courses__item-text,
+  .courses__item-title{
+    max-width: 100%;
+  }
+  .experts__item{
+    flex-direction: column;
+  }
+  .experts__item-title{
+    max-width: 100%;
+  }
+  .experts__item-img{
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .form__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__content-text{
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .form__content-title{
+    text-align: center;
+  }
+  .students__item-title{
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 @media (max-width: 960px){
@@ -60,6 +124,30 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
   }
+  .students__inner{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px){
+  .courses__wrapper{
+    grid-template-columns: repeat(1, 1fr);
+  } 
+  .education__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .review{
+    &__item{
+      width: 335px;
+    }
+    &__item-text{
+      font-size: 16px;
+      line-height: 21px;
+    }
+    &__video-box{
+      padding: 160px 0;
+    }
+  }
 }
 @media (max-width: 800px) {
   .header-mobile{
@@ -74,7 +162,18 @@
   .top-slider{
     padding-bottom: 40px;
   }
-  .numbers{
+  .numbers,
+  .courses,
+  .numbers,
+  .education,
+  .experts,
+  .experts--mobile,
+  .review,
+  .review--mobile,
+  .students,
+  .students--mobile,
+  .form,
+  .publications{
     padding: 40px 0;
   }
 }
@@ -82,17 +181,27 @@
   .title{
     font-size: 34px;
     line-height: 38px;
+    margin-bottom: 22px;
   }
-  .top-slider__title{
-    font-size: 36px;
+  .form__content-title{
+    font-size: 34px;
     line-height: 38px;
   }
-  .top-slider__content{
-    padding: 110px 35px 30px;
+  .top-slider{
+    &__title{
+    font-size: 36px;
+    line-height: 38px;
+    }
+    &__content{
+      padding: 110px 35px 30px;
+    }
+    &__text{
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
-  .top-slider__text{
-    font-size: 18px;
-    line-height: 24px;
+  .blue-link{
+    display: none;
   }
   .numbers__item-title{
     font-size: 32px;
@@ -101,6 +210,64 @@
   .numbers__item-text{
     font-size: 16px;
     line-height: 20px;
+  }
+  .courses__item-title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .courses__item-text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .education{
+  &__num{
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+ }
+ .education-video{
+  margin-bottom: 22px;
+  padding: 90px 0;
+ }
+ .review-info__name{
+  font-size: 16px;
+  line-height: 20px;
+ }
+ .review-info__date{
+  font-size: 14px;
+  line-height: 18px;
+ }
+ .review__item-box--768{
+  display: none;
+ }
+ .form__content-text{
+  font-size: 18px;
+  line-height: 22px; 
+ }
+ .students__item-text{
+  font-size: 16px;
+ }
+}
+@media (max-width: 620px){
+  .experts__inner {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+  .students__inner {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .students__item{
+    max-width: 370px;
   }
 }
 @media (max-width: 560px){
@@ -119,7 +286,30 @@
   .top-slider__item{
     border-radius: 24px;
   }
-  
+  .courses__item {
+    padding: 16px 40px 16px 25px;
+  }
+  .form{
+    &__inner{
+      padding: 27px 24px 30px;
+      text-align: center;
+    }
+    &__form-inputbox{
+      display: block;
+    }
+    &__form-inputbox input+input {
+      margin-left: 0;
+    }
+    &__form-input{
+      margin-bottom: 16px;
+    }
+    &__form-box{
+      display: block;
+    }
+    &__form-text{
+      margin: 0 auto 30px;
+    }
+  }
 }
 @media (max-width: 440px){
   .title{
@@ -147,8 +337,145 @@
     font-size: 24px;
     line-height: 30px;
   }
-  .numbers__item-text{
+  .numbers__item-text,
+  .experts__item-text,
+  .review-info__date{
     font-size: 12px;
     line-height: 16px;
   }
+  .experts__item-title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .courses{
+  &__wrapper--mobile{
+      display: block;
+  }
+  &__wrapper{
+    display: none;
+  }
+  &__item-title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__item-text{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  &__item-link{
+    display: none;
+  }
+  &__item-span{
+    font-size: 10px;
+    line-height: 15px;
+    padding: 1px 10px;
+  }
+  &__item-img--mobile{
+    height: 88px;
+  }
+  &__item--white{
+    text-align: center;
+    background-color: $bg;
+    padding: 126px 25px;
+    .courses__item-title{
+      margin-bottom: 0;
+    }
+  }
+ }
+ .education {
+   &__num {
+     font-size: 32px;
+     line-height: 43px;
+     margin-bottom: 15px;
+     padding-bottom: 6px;
+   }
+
+   &__text {
+     font-size: 12px;
+     line-height: 16px;
+   }
+
+   &__title {
+     font-size: 14px;
+     line-height: 20px;
+     margin-bottom: 6px;
+   }
+   &__inner {
+    grid-gap: 15px;
+   }
+ }
+ .education-video {
+   padding: 60px 0;
+ }
+ .education-video__img {
+   top: 15px;
+   left: 20px;
+ }
+ .education-video__link{
+  height: 55px;
+  width: 55px;
+ }
+ .experts--mobile,
+ .review--mobile,
+ .students--mobile {
+   display: block;
+ }
+ .experts,
+ .review,
+ .students {
+   display: none;
+ }
+ .review-info__name{
+  font-size: 14px;
+  line-height: 20px;
+ }
+ .review-info__img{
+  width: 40px;
+ }
+ .review__item{
+  padding: 16px;
+  margin-bottom: 0;
+ }
+ .students{
+  &__item-img{
+    margin-bottom: 12px;
+  }
+  &__item-title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__item-text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+ }
+ .form{
+  &__form-btn{
+    width: 100%;
+    font-size: 14px;
+    padding: 17px 39px;
+  }
+  &__content-title{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  &__content-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__form-input{
+    padding: 15px 16px;
+    &::placeholder{
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__form-text{
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 auto 13px;
+  }
+ }
 }
